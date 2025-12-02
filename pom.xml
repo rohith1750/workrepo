@@ -65,3 +65,4 @@
     </pluginManagement>
   </build>
 </project>
+docker swarm join --token SWMTKN-1-2396tyx4rynm1wqwmly60tyxpw11fuxw6icd9dpdkrzy6c7ao4-8ds8354koect7cbk7s84797hl 172.16.40.135:2377
