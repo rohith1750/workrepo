@@ -66,3 +66,15 @@
   </build>
 </project>
 docker swarm join --token SWMTKN-1-2396tyx4rynm1wqwmly60tyxpw11fuxw6icd9dpdkrzy6c7ao4-8ds8354koect7cbk7s84797hl 172.16.40.135:2377
+kubeadm join 172.16.40.135:6443 --token vsecq5.kxlfz4vs4kre09do \
+	--discovery-token-ca-cert-hash sha256:02911bfcd1d53003b544af2e871f523e644df42a145122d2e1215ca1ec66dd3b
+
+
+mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
